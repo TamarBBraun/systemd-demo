@@ -1,0 +1,11 @@
+[Unit]
+Description=Thinking about bananas
+
+[Service]
+Type=oneshot
+ExecStartPre=echo "Buy a banana!"
+ExecStart=/usr/local/bin/watch-banana-rot.sh
+ExecStartPost=echo "Regret buying a banana, and throw it in the garbage"
+
+[Install]
+WantedBy=multi-user.target
