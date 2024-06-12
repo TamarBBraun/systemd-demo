@@ -1,0 +1,10 @@
+[Unit]
+Description=This is Tamar's World
+Requires=multi-user.target
+
+Requires=chainsaw.service frisbee.service
+Conflicts=banana.service
+
+Wants=display-manager.service
+After=multi-user.target display-manager.service
+AllowIsolate=yes
