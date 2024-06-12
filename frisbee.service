@@ -1,0 +1,11 @@
+[Unit]
+Description=Play withmy frisbee!
+
+[Service]
+Type=simple
+ExecStartPre=echo "Buy a frisbee!"
+ExecStart=/usr/local/bin/play-ultimate.sh
+ExecStartPost=echo "Get physical therapy"
+
+[Install]
+WantedBy=multi-user.target
