@@ -1,0 +1,8 @@
+[Unit]
+Description=Say hello to the world!
+
+[Service]
+ExecStart=/usr/local/bin/hello-world.sh
+
+[Install]
+WantedBy=multi-user.target
